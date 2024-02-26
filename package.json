@@ -1,15 +1,27 @@
 {
   "name": "vite-vue-starter",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": {
     "name": "HuJix",
     "url": "https://github.com/hujix"
   },
-  "homepage": "https://github.com/hujix/vite-vue-starter",
+  "homepage": "https://github.com/hujix/vite-vue-starter/?tab=readme-ov-file#vite-vue-starter",
+  "repository": "https://github.com/hujix/vite-vue-starter",
   "description": "A foundational project for front-end development",
   "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "vite",
+    "vue",
+    "Eslint",
+    "Prettier",
+    "TypeScript",
+    "frontend",
+    "starter"
+  ],
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
