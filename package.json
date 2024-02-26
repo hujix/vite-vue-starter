@@ -6,6 +6,7 @@
     "name": "HuJix",
     "url": "https://github.com/hujix"
   },
+  "homepage": "https://github.com/hujix/vite-vue-starter",
   "description": "A foundational project for front-end development",
   "type": "module",
   "scripts": {
