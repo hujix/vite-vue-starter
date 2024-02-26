@@ -1,6 +1,6 @@
 # vite-vue-starter
 
-为前端开发建立的一个基础模板，安装的插件包括但不限于以下：
+前端开发项目基础搭建一直是非常耗时的步骤，至少是我的一大痛点，所以这个项目就是为前端开发建立的一个基础模板，安装的插件包括但不限于以下：
 
 - vite: 项目构建工具
 - vue: 基于vue3的框架
@@ -24,6 +24,12 @@
 
 ## 设置
 
+### 下载模板
+```shell
+npx degit hujix/vite-vue-starter#main my-project
+cd my-project
+```
+
 ### 安装 `pnpm`
 
 ```shell
@@ -38,7 +44,7 @@ pnpm install
 
 ### 编译并热部署
 ```
-npm run dev
+pnpm run dev
 ```
 
 ## IDE的提示设置
@@ -54,7 +60,6 @@ npm run dev
 
 1. 禁用内置的 `TypeScript` 扩展
    1. 从 VSCode 的命令面板运行“Extensions: Show Built-in Extensions”
-   2. 找到 `TypeScript 和 JavaScript 语言功能`，右键单击并选择 `Disable（Workspace）`（只在当前工作空间禁用）。
-2. 通过从命令面板运行 `Developer：Reload Window` 或者重新启动或者点击插件 `Reload require` 来重新加载 `VSCode` 窗口。
-
+   2. 找到 `TypeScript and JavaScript Language Features`，右键单击并选择 `Disable（Workspace）`（只在当前工作空间禁用）。
+2. 通过从命令面板运行 `Developer：Reload Window` 或者重新启动或者点击插件 `Reload required` 来重新加载 `VSCode` 窗口。
 
