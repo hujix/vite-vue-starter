@@ -7,7 +7,6 @@ export default {
   bracketSpacing: true,
   endOfLine: "auto",
   arrowParens: "always",
-  trailingComma: "none",
   importOrder: ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
