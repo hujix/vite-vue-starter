@@ -1,4 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useUserStore } from "@/store/modules/user";
+import { onMounted } from "vue";
+
+const userStore = useUserStore();
+
+onMounted(() => {
+  userStore.updateUserInfo();
+});
+</script>
 <template>
   <div class="py16 container mx-auto px-6 text-center">
     <a href="#" class="mx-auto mt-16 flex items-center justify-center gap-3">
@@ -20,13 +29,18 @@
         Building Your Web App with this Starter Template
       </h1>
       <p class="mt-6 text-gray-500 dark:text-gray-300">
-        No configuration required, start developing your web app today
+        Start developing web applications immediately with no or minimal configuration required
+        <!-- 无需或只需配置，立即开始开发网络应用程序 -->
       </p>
-      <button
+      <a
+        type="button"
+        target="_blank"
+        href="https://github.com/hujix/vite-vue-starter"
         class="mt-6 rounded-lg bg-blue-600 px-5 py-2 text-center text-sm font-medium capitalize leading-5 text-white hover:bg-blue-500 focus:outline-none lg:mx-0 lg:w-auto"
       >
-        Let's get started with HuJix
-      </button>
+        Let's get started with
+        {{ userStore.name }}
+      </a>
     </div>
   </div>
 </template>
