@@ -45,9 +45,11 @@ vite-vue-starter
 │   ├── router        # 路由配置
 │   ├── store         # 状态管理中心
 │   ├── types         # Typescript 类型
-│   └── utils         # 工具库
-│   └── App.vue       # 视图入口
-│   └── main.ts       # 入口文件
+│   ├── utils         # 工具库
+│   ├── App.vue       # 视图入口
+│   ├── main.ts       # 入口文件
+│   ├── style.css     # 全局样式
+│   └── vite-env.d.ts # 声明文件
 ├── .editorconfig
 ├── .eslintrc.json
 ├── .gitignore
