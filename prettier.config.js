@@ -1,5 +1,5 @@
 export default {
-  trailingComma: "es5",
+  trailingComma: "none",
   tabWidth: 2,
   semi: true,
   printWidth: 120,

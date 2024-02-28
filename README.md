@@ -22,6 +22,48 @@
 
 全程已配置完成，无需手动配置。只需要安装依赖即可开始开发。
 
+## 项目基本目录
+
+```text
+vite-vue-starter
+├── .husky            # git 钩子配置
+├── .vscode           # vscode 配置
+├── patches           # 补丁
+├── public
+│   ├── favicon.ico   # favicon图标
+├── src
+│   ├── api           # 请求接口
+│   ├── assets        # 静态资源
+│   ├── components    # 通用业务组件
+│   ├── config        # 全局配置(包含echarts主题)
+│          └── settings.json  # 配置文件
+│   ├── hooks         # 全局hooks
+│   ├── layout        # 布局
+│   ├── locale        # 国际化语言包
+│   ├── mock          # 模拟数据
+│   ├── views         # 页面模板
+│   ├── router        # 路由配置
+│   ├── store         # 状态管理中心
+│   ├── types         # Typescript 类型
+│   └── utils         # 工具库
+│   └── App.vue       # 视图入口
+│   └── main.ts       # 入口文件
+├── .editorconfig
+├── .eslintrc.json
+├── .gitignore
+├── .prettierignore
+├── index.html
+├── LICENSE
+├── pnpm-lock.json
+├── postcss.config.js
+├── prettier.config.js
+├── README.md
+├── tailwind.config.js
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+```
+
 ## 设置
 
 ### 下载模板

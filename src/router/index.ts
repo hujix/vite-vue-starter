@@ -1,3 +1,4 @@
+import DefaultLayout from "@/layout/DefaultLayout.vue";
 import { RouteRecordRaw, createRouter, createWebHistory } from "vue-router";
 
 const routes: Array<RouteRecordRaw> = [
@@ -8,7 +9,11 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/home",
     name: "Home",
-    component: () => import("@/views/HomePage.vue")
+    component: () => import("@/views/HomePage.vue"),
+    meta: {
+      title: "首页",
+      layout: DefaultLayout
+    }
   }
 ];
 
