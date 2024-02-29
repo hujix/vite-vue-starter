@@ -6,13 +6,7 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 
 const layout = computed(() => {
-  if (route && route.meta && route.meta.layout) {
-    // 如果在路由的 meta 数据中指定了布局，则使用指定的布局
-    return route.meta.layout;
-  } else {
-    // 如果没有在路由的 meta 数据中指定布局，则使用默认布局
-    return DefaultLayout;
-  }
+  return route.meta.layout || DefaultLayout;
 });
 </script>
 
