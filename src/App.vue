@@ -15,7 +15,7 @@ const layout = computed(() => {
   <component :is="layout">
     <router-view v-slot="{ Component }">
       <!-- 添加路由过渡动画 `fade` -->
-      <transition name="fade">
+      <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
