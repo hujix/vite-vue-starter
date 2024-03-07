@@ -1,0 +1,10 @@
+{
+  "header": {
+    "button": "Get Started"
+  },
+  "home": {
+    "title": "Building Your Web App with this Starter Template",
+    "desc": "Start developing immediately with little or no configuration.",
+    "button": "🎉 Getting started with starter"
+  }
+}
