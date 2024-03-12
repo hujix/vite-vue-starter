@@ -3,9 +3,16 @@
  * 图片压缩
  * https://github.com/anncwb/vite-plugin-imagemin
  */
+import type { Plugin } from "vite";
+import { loadEnv } from "vite";
 import viteImagemin from "vite-plugin-imagemin";
 
-export default function configImageminPlugin() {
+export default function configImageminPlugin(): Plugin | null {
+  const config = loadEnv(process.env.NODE_ENV || "development", process.cwd());
+  if (config.VITE_IMAGEMIN_STATUS === "false" || config.VITE_IMAGEMIN_STATUS !== "true") {
+    return null;
+  }
+  console.log("🚀 Activate image compression plugin...");
   const imageminPlugin = viteImagemin({
     gifsicle: {
       optimizationLevel: 7,
